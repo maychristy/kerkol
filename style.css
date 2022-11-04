@@ -9,17 +9,46 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+/* css Navbar */
+section nav {
+  display: flex;
+  background-color: #71a5de;
+  justify-content: space-between;
+  padding: 20px 20px;
+  padding-left: 300px;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  /*position: fixed;*/
+
+
+}
+nav .judul{
+  font-size: 25px;
+  
+}
+nav input{
+  height:30px;
+  width: 400px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
 
 body{
     min-height: 100vh;
     width: 100%;
+    
 }
+
 
 .sidebar{
     position:fixed;
     height: 100%;
     width: 240px; 
     background: #71a5de;
+    position: fixed;
 }
 
 /* wadh logo dan nama */
