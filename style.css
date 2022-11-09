@@ -10,32 +10,76 @@
     font-family: 'Poppins', sans-serif;
 }
 /* css Navbar */
-section nav {
-  display: flex;
-  background-color: #71a5de;
-  justify-content: space-between;
-  padding: 20px 20px;
-  padding-left: 300px;
-  color: #fff;
-  align-items: center;
-  width: 100%;
-  /*position: fixed;*/
+.home-section1 {
 
-
+  position: relative;
+  height: 100%;
+  left: 240px;
 }
-nav .judul{
-  font-size: 25px;
+
+.home-section1 nav{
+  height: 80px;
+  width: 83%;
+  background: #71a5de;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2 fr;
+  z-index: 10;
+  position: fixed;
+  color: white;
+  box-shadow: rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   
 }
+
+.home-section1 nav .judul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 35px;  
+}
+
+.home-section1 nav .judul i{
+  font-size: 35px;
+  margin-right: 30px;
+}
 nav input{
-  height:30px;
-  width: 400px;
-  padding-left: 10px;
+  height:35px;
+  flex : 0 0 400px;
+  padding-left: 40px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  white-space:nowrap;
+
+}
+.search .icon{
+  position: absolute;
+  top: 38%;
+  padding-left: 10px;
+  color: rgb(129, 129, 129);
+
 
 }
 
+.akun img {
+  width:30px;
+  height:30px;
+  border-radius: 60%;
+  border: 2px solid #d8ebff;
+  position: absolute;
+  top: 34%;
+  right:75px ;
+
+}
+.akun a{
+  color:white;
+  padding-right: 10px;
+}
+.akun a:hover{
+  color:black;
+}
 body{
     min-height: 100vh;
     width: 100%;
@@ -307,6 +351,14 @@ body{
       width: calc(100% - 220px);
       left: 220px;
     }
+    .home-section1 nav {
+      width: 100%;
+      display:flex;
+      left: 60px;
+    }
+    nav input{
+      width: 80%;
+    }
   }
   @media (max-width: 1150px) {
     .home-content .sales-boxes{
@@ -320,11 +372,22 @@ body{
     .home-content .sales-boxes .top-sales{
       margin: 0;
     }
+    .home-section1 nav {
+      width: 100%;
+      display:flex;
+      left: 60px;
+    }
   }
   @media (max-width: 1000px) {
     .overview-boxes .box{
       width: calc(100% / 2 - 15px);
       margin-bottom: 15px;
+    }
+    .home-section1 nav {
+      width: 100%;
+      display:flex;
+      left: 60px;
+      justify-content:space-between;
     }
   }
   @media (max-width: 700px) {
@@ -340,6 +403,20 @@ body{
     .home-content .sales-boxes .sales-details{
       width: 560px;
     }
+    .home-section1 nav {
+      width: 100%;
+      display:flex;
+      left: 60px;
+    }
+    nav input{
+      width: 60%;
+    }
+    .home-section1 nav {
+      width: 100%;
+      display:flex;
+      left: 60px;
+      justify-content:space-between;
+    }
   }
   @media (max-width: 550px) {
     .overview-boxes .box{
@@ -349,8 +426,26 @@ body{
     .sidebar.active ~ .home-section nav .profile-details{
       display: none;
     }
+    .home-section1 nav {
+      width: 100%;
+      display:flex;
+      left: 60px;
+      justify-content:space-between;
+    }
+    nav input{
+      width: 70%;
+    }
   }
     @media (max-width: 400px) {
+      nav input{
+        width: 80%;
+      }
+      .home-section1 nav {
+        width: 100%;
+        display:flex;
+        left: 60px;
+        justify-content:space-around;
+      }
     .sidebar{
       width: 0;
     }
@@ -373,5 +468,9 @@ body{
       left: 60px;
       width: calc(100% - 60px);
     }
+    .akun img{
+      gap: 5px;
+    }
+  
   }
 
